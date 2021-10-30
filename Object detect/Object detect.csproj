@@ -125,6 +125,12 @@
       <DependentUpon>AI_Medicine.cs</DependentUpon>
     </Compile>
     <Compile Include="Connect_SQL_IN.cs" />
+    <Compile Include="CT_BenhNhan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CT_BenhNhan.Designer.cs">
+      <DependentUpon>CT_BenhNhan.cs</DependentUpon>
+    </Compile>
     <Compile Include="General Medical.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -165,6 +171,9 @@
     </Compile>
     <EmbeddedResource Include="AI_Medicine.resx">
       <DependentUpon>AI_Medicine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CT_BenhNhan.resx">
+      <DependentUpon>CT_BenhNhan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="General Medical.resx">
       <DependentUpon>General Medical.cs</DependentUpon>

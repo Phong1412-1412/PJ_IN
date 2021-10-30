@@ -43,7 +43,6 @@ namespace Object_detect
             this.label1 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.panel_LG_IN = new System.Windows.Forms.Panel();
-            this.panel7 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.lb_TongG = new System.Windows.Forms.Label();
             this.lb_GT = new System.Windows.Forms.Label();
@@ -51,6 +50,11 @@ namespace Object_detect
             this.panel_Gương = new System.Windows.Forms.Panel();
             this.panel_TTGiuong = new System.Windows.Forms.Panel();
             this.cbb_TenPhong = new System.Windows.Forms.ComboBox();
+            this.lb_BI = new System.Windows.Forms.Label();
+            this.lb_Name = new System.Windows.Forms.Label();
+            this.lb_Number = new System.Windows.Forms.Label();
+            this.btn_XemCTBN = new System.Windows.Forms.Button();
+            this.panel7 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel_LG_IN.SuspendLayout();
@@ -95,6 +99,10 @@ namespace Object_detect
             // 
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel1.Controls.Add(this.btn_XemCTBN);
+            this.panel1.Controls.Add(this.lb_Number);
+            this.panel1.Controls.Add(this.lb_Name);
+            this.panel1.Controls.Add(this.lb_BI);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.label7);
@@ -216,14 +224,6 @@ namespace Object_detect
             this.panel_LG_IN.Size = new System.Drawing.Size(245, 79);
             this.panel_LG_IN.TabIndex = 65;
             // 
-            // panel7
-            // 
-            this.panel7.BackgroundImage = global::Object_detect.Properties.Resources.Logo;
-            this.panel7.Location = new System.Drawing.Point(166, 0);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(79, 76);
-            this.panel7.TabIndex = 1;
-            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(56)))), ((int)(((byte)(143)))));
@@ -296,6 +296,60 @@ namespace Object_detect
             this.cbb_TenPhong.TabIndex = 85;
             this.cbb_TenPhong.SelectedIndexChanged += new System.EventHandler(this.cbb_TenPhong_SelectedIndexChanged);
             // 
+            // lb_BI
+            // 
+            this.lb_BI.AutoSize = true;
+            this.lb_BI.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lb_BI.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.lb_BI.Location = new System.Drawing.Point(133, 13);
+            this.lb_BI.Name = "lb_BI";
+            this.lb_BI.Size = new System.Drawing.Size(0, 19);
+            this.lb_BI.TabIndex = 78;
+            // 
+            // lb_Name
+            // 
+            this.lb_Name.AutoSize = true;
+            this.lb_Name.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lb_Name.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.lb_Name.Location = new System.Drawing.Point(62, 51);
+            this.lb_Name.Name = "lb_Name";
+            this.lb_Name.Size = new System.Drawing.Size(56, 19);
+            this.lb_Name.TabIndex = 79;
+            this.lb_Name.Text = "Name:";
+            // 
+            // lb_Number
+            // 
+            this.lb_Number.AutoSize = true;
+            this.lb_Number.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lb_Number.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.lb_Number.Location = new System.Drawing.Point(115, 86);
+            this.lb_Number.Name = "lb_Number";
+            this.lb_Number.Size = new System.Drawing.Size(56, 19);
+            this.lb_Number.TabIndex = 80;
+            this.lb_Number.Text = "Name:";
+            // 
+            // btn_XemCTBN
+            // 
+            this.btn_XemCTBN.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btn_XemCTBN.BackColor = System.Drawing.Color.DarkGray;
+            this.btn_XemCTBN.Font = new System.Drawing.Font("Segoe UI", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_XemCTBN.ForeColor = System.Drawing.Color.White;
+            this.btn_XemCTBN.Location = new System.Drawing.Point(-2, 206);
+            this.btn_XemCTBN.Name = "btn_XemCTBN";
+            this.btn_XemCTBN.Size = new System.Drawing.Size(261, 47);
+            this.btn_XemCTBN.TabIndex = 95;
+            this.btn_XemCTBN.Text = "Xem Chi Tiết Bệnh Nhân";
+            this.btn_XemCTBN.UseVisualStyleBackColor = false;
+            this.btn_XemCTBN.Click += new System.EventHandler(this.btn_XemCTBN_Click);
+            // 
+            // panel7
+            // 
+            this.panel7.BackgroundImage = global::Object_detect.Properties.Resources.Logo;
+            this.panel7.Location = new System.Drawing.Point(166, 0);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(79, 76);
+            this.panel7.TabIndex = 1;
+            // 
             // Statistics_of_hospital_beds
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -344,5 +398,9 @@ namespace Object_detect
         private System.Windows.Forms.Panel panel_Gương;
         private System.Windows.Forms.Panel panel_TTGiuong;
         private System.Windows.Forms.ComboBox cbb_TenPhong;
+        private System.Windows.Forms.Label lb_Number;
+        private System.Windows.Forms.Label lb_Name;
+        private System.Windows.Forms.Label lb_BI;
+        private System.Windows.Forms.Button btn_XemCTBN;
     }
 }
