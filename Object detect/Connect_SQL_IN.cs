@@ -52,6 +52,36 @@ namespace Object_detect
             s = (int)cmd.ExecuteScalar();
             return s;
         }
+        
+        public static int TongGiuong()
+        {
+            int s;
+            string query = "SELECT TongGiuong('MP0001')";
+            MySqlConnection conn = GetDBConnection();
+            MySqlCommand cmd = new MySqlCommand(query, conn);
+            s = (int)cmd.ExecuteScalar();
+            return s;
+        }
+
+        public static int TongGiuongTrong()
+        {
+            int s;
+            string query = "SELECT TongGiuongTrong('MP0001')";
+            MySqlConnection conn = GetDBConnection();
+            MySqlCommand cmd = new MySqlCommand(query, conn);
+            s = (int)cmd.ExecuteScalar();
+            return s;
+        }
+
+        public static int TongGiuongUse()
+        {
+            int s;
+            string query = "SELECT TongGiuongUse('MP0001')";
+            MySqlConnection conn = GetDBConnection();
+            MySqlCommand cmd = new MySqlCommand(query, conn);
+            s = (int)cmd.ExecuteScalar();
+            return s;
+        }
 
         //-------------------------------------BEGIN: Hiển thị thông tin khoa----------------------------------------------------------
         public static void HienThiTenKhoa(Button khoa, int i)
@@ -70,5 +100,59 @@ namespace Object_detect
         }
         //-------------------------------------END: Hiển thị thông tin khoa------------------------------------------------------------
 
+
+        //--------------------------------------BEGIN: Hiển thị thông tin giường-------------------------------------------------------
+        public static void HienThiThongTinGiuong(Button G, int i,Label MP)
+        {
+          
+            string SoGiuong = "SG000";
+            if(i<10)
+            {
+                SoGiuong = "SG000";
+            }
+             if(i>=10 && i<100)
+            {
+                SoGiuong = "SG00";
+            }
+            if(i>=100 && i<1000)
+            {
+                SoGiuong = "SG0";
+            }
+            string query = "SELECT * FROM giuong WHERE SoGiuong = '"+SoGiuong+"" + i + "' ";
+            
+            MySqlConnection conn = GetDBConnection();
+            MySqlCommand cmd = new MySqlCommand(query, conn);
+            MySqlDataReader DTRead = cmd.ExecuteReader();
+            if (DTRead.HasRows)
+            {
+                int TrangThai = 0;
+                DTRead.Read();
+                G.Text = DTRead[0].ToString();
+                G.Name = DTRead[0].ToString();
+                MP.Name = DTRead[2].ToString();
+                TrangThai = int.Parse(DTRead[3].ToString());
+                //  TrangThai = (int)DTRead[3];
+                if (TrangThai == 1)
+                {
+                    G.BackColor = System.Drawing.Color.IndianRed;
+                }
+            }
+        }
+
+        public static void TenPhong(Label TenPhong)
+        {
+            string query = "SELECT TenPhong FROM phong WHERE MaPhong = '"+TenPhong.Name+"'";
+
+            MySqlConnection conn = GetDBConnection();
+            MySqlCommand cmd = new MySqlCommand(query, conn);
+            MySqlDataReader DTRead = cmd.ExecuteReader();
+            if (DTRead.HasRows)
+            {
+                DTRead.Read();
+                TenPhong.Text = DTRead[0].ToString();
+            }    
+        }
+
+        //--------------------------------------END: Hiển thị thông tin giường---------------------------------------------------------
     }
 }
