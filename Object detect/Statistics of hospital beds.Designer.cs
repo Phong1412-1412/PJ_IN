@@ -45,29 +45,17 @@ namespace Object_detect
             this.panel_LG_IN = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button12 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button14 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
-            this.button13 = new System.Windows.Forms.Button();
-            this.button15 = new System.Windows.Forms.Button();
-            this.lb_TenPhong = new System.Windows.Forms.Label();
             this.lb_TongG = new System.Windows.Forms.Label();
             this.lb_GT = new System.Windows.Forms.Label();
             this.lb_GU = new System.Windows.Forms.Label();
+            this.panel_Gương = new System.Windows.Forms.Panel();
+            this.panel_TTGiuong = new System.Windows.Forms.Panel();
+            this.cbb_TenPhong = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel_LG_IN.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.panel_TTGiuong.SuspendLayout();
             this.SuspendLayout();
             // 
             // label5
@@ -110,14 +98,14 @@ namespace Object_detect
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.label7);
-            this.panel1.Location = new System.Drawing.Point(946, 329);
+            this.panel1.Location = new System.Drawing.Point(0, 259);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(261, 255);
             this.panel1.TabIndex = 103;
             // 
             // panel4
             // 
-            this.panel4.BackColor = System.Drawing.Color.IndianRed;
+            this.panel4.BackColor = System.Drawing.Color.Yellow;
             this.panel4.Location = new System.Drawing.Point(74, 132);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(17, 20);
@@ -168,17 +156,17 @@ namespace Object_detect
             // 
             this.panel5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel5.Controls.Add(this.cbb_TenPhong);
             this.panel5.Controls.Add(this.lb_GU);
             this.panel5.Controls.Add(this.lb_GT);
             this.panel5.Controls.Add(this.lb_TongG);
-            this.panel5.Controls.Add(this.lb_TenPhong);
             this.panel5.Controls.Add(this.panel4);
             this.panel5.Controls.Add(this.panel3);
             this.panel5.Controls.Add(this.label8);
             this.panel5.Controls.Add(this.label4);
             this.panel5.Controls.Add(this.label3);
             this.panel5.Controls.Add(this.label2);
-            this.panel5.Location = new System.Drawing.Point(946, 115);
+            this.panel5.Location = new System.Drawing.Point(0, 31);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(261, 182);
             this.panel5.TabIndex = 102;
@@ -247,257 +235,6 @@ namespace Object_detect
             this.panel2.Size = new System.Drawing.Size(1219, 75);
             this.panel2.TabIndex = 101;
             // 
-            // button12
-            // 
-            this.button12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.button12.BackgroundImage = global::Object_detect.Properties.Resources.bet_remove_bg;
-            this.button12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button12.ForeColor = System.Drawing.Color.White;
-            this.button12.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button12.Location = new System.Drawing.Point(534, 288);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(125, 101);
-            this.button12.TabIndex = 115;
-            this.button12.Text = "Number:";
-            this.button12.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button12.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
-            this.button12.UseVisualStyleBackColor = false;
-            // 
-            // button10
-            // 
-            this.button10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.button10.BackgroundImage = global::Object_detect.Properties.Resources.bet_remove_bg;
-            this.button10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button10.ForeColor = System.Drawing.Color.White;
-            this.button10.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button10.Location = new System.Drawing.Point(534, 115);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(125, 101);
-            this.button10.TabIndex = 113;
-            this.button10.Text = "Number:";
-            this.button10.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button10.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
-            this.button10.UseVisualStyleBackColor = false;
-            // 
-            // button7
-            // 
-            this.button7.BackColor = System.Drawing.Color.IndianRed;
-            this.button7.BackgroundImage = global::Object_detect.Properties.Resources.bet_remove_bg;
-            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.ForeColor = System.Drawing.Color.White;
-            this.button7.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button7.Location = new System.Drawing.Point(358, 471);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(125, 101);
-            this.button7.TabIndex = 112;
-            this.button7.Text = "Number:";
-            this.button7.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button7.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
-            this.button7.UseVisualStyleBackColor = false;
-            // 
-            // button8
-            // 
-            this.button8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.button8.BackgroundImage = global::Object_detect.Properties.Resources.bet_remove_bg;
-            this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.ForeColor = System.Drawing.Color.White;
-            this.button8.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button8.Location = new System.Drawing.Point(185, 471);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(125, 101);
-            this.button8.TabIndex = 111;
-            this.button8.Text = "Number:";
-            this.button8.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button8.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
-            this.button8.UseVisualStyleBackColor = false;
-            // 
-            // button9
-            // 
-            this.button9.BackColor = System.Drawing.Color.IndianRed;
-            this.button9.BackgroundImage = global::Object_detect.Properties.Resources.bet_remove_bg;
-            this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button9.ForeColor = System.Drawing.Color.White;
-            this.button9.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button9.Location = new System.Drawing.Point(12, 471);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(125, 101);
-            this.button9.TabIndex = 110;
-            this.button9.Text = "Number:";
-            this.button9.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button9.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
-            this.button9.UseVisualStyleBackColor = false;
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.button4.BackgroundImage = global::Object_detect.Properties.Resources.bet_remove_bg;
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button4.Location = new System.Drawing.Point(358, 288);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(125, 101);
-            this.button4.TabIndex = 109;
-            this.button4.Text = "Number:";
-            this.button4.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
-            this.button4.UseVisualStyleBackColor = false;
-            // 
-            // button5
-            // 
-            this.button5.BackColor = System.Drawing.Color.IndianRed;
-            this.button5.BackgroundImage = global::Object_detect.Properties.Resources.bet_remove_bg;
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button5.Location = new System.Drawing.Point(185, 288);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(125, 101);
-            this.button5.TabIndex = 108;
-            this.button5.Text = "Number:";
-            this.button5.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button5.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
-            this.button5.UseVisualStyleBackColor = false;
-            // 
-            // button6
-            // 
-            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.button6.BackgroundImage = global::Object_detect.Properties.Resources.bet_remove_bg;
-            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button6.Location = new System.Drawing.Point(12, 288);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(125, 101);
-            this.button6.TabIndex = 107;
-            this.button6.Text = "Number:";
-            this.button6.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button6.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
-            this.button6.UseVisualStyleBackColor = false;
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.button3.BackgroundImage = global::Object_detect.Properties.Resources.bet_remove_bg;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button3.Location = new System.Drawing.Point(358, 115);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(125, 101);
-            this.button3.TabIndex = 106;
-            this.button3.Text = "Number:";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
-            this.button3.UseVisualStyleBackColor = false;
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.button2.BackgroundImage = global::Object_detect.Properties.Resources.bet_remove_bg;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button2.Location = new System.Drawing.Point(185, 115);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(125, 101);
-            this.button2.TabIndex = 105;
-            this.button2.Text = "Number:";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
-            this.button2.UseVisualStyleBackColor = false;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.button1.BackgroundImage = global::Object_detect.Properties.Resources.bet_remove_bg;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button1.Location = new System.Drawing.Point(12, 115);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(125, 101);
-            this.button1.TabIndex = 104;
-            this.button1.Text = "Number:";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
-            this.button1.UseVisualStyleBackColor = false;
-            // 
-            // button14
-            // 
-            this.button14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.button14.BackgroundImage = global::Object_detect.Properties.Resources.bet_remove_bg;
-            this.button14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button14.ForeColor = System.Drawing.Color.White;
-            this.button14.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button14.Location = new System.Drawing.Point(534, 473);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(125, 101);
-            this.button14.TabIndex = 117;
-            this.button14.Text = "Number:";
-            this.button14.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button14.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
-            this.button14.UseVisualStyleBackColor = false;
-            // 
-            // button11
-            // 
-            this.button11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.button11.BackgroundImage = global::Object_detect.Properties.Resources.bet_remove_bg;
-            this.button11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button11.ForeColor = System.Drawing.Color.White;
-            this.button11.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button11.Location = new System.Drawing.Point(704, 288);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(125, 101);
-            this.button11.TabIndex = 119;
-            this.button11.Text = "Number:";
-            this.button11.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button11.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
-            this.button11.UseVisualStyleBackColor = false;
-            // 
-            // button13
-            // 
-            this.button13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.button13.BackgroundImage = global::Object_detect.Properties.Resources.bet_remove_bg;
-            this.button13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button13.ForeColor = System.Drawing.Color.White;
-            this.button13.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button13.Location = new System.Drawing.Point(704, 115);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(125, 101);
-            this.button13.TabIndex = 118;
-            this.button13.Text = "Number:";
-            this.button13.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button13.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
-            this.button13.UseVisualStyleBackColor = false;
-            // 
-            // button15
-            // 
-            this.button15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.button15.BackgroundImage = global::Object_detect.Properties.Resources.bet_remove_bg;
-            this.button15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button15.ForeColor = System.Drawing.Color.White;
-            this.button15.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button15.Location = new System.Drawing.Point(704, 473);
-            this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(125, 101);
-            this.button15.TabIndex = 120;
-            this.button15.Text = "Number:";
-            this.button15.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button15.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
-            this.button15.UseVisualStyleBackColor = false;
-            // 
-            // lb_TenPhong
-            // 
-            this.lb_TenPhong.AutoSize = true;
-            this.lb_TenPhong.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.lb_TenPhong.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.lb_TenPhong.Location = new System.Drawing.Point(110, 18);
-            this.lb_TenPhong.Name = "lb_TenPhong";
-            this.lb_TenPhong.Size = new System.Drawing.Size(100, 19);
-            this.lb_TenPhong.TabIndex = 81;
-            this.lb_TenPhong.Text = "Room name:";
-            // 
             // lb_TongG
             // 
             this.lb_TongG.AutoSize = true;
@@ -531,29 +268,42 @@ namespace Object_detect
             this.lb_GU.TabIndex = 84;
             this.lb_GU.Text = "Room name:";
             // 
+            // panel_Gương
+            // 
+            this.panel_Gương.AutoScroll = true;
+            this.panel_Gương.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel_Gương.Location = new System.Drawing.Point(0, 75);
+            this.panel_Gương.Name = "panel_Gương";
+            this.panel_Gương.Size = new System.Drawing.Size(952, 526);
+            this.panel_Gương.TabIndex = 104;
+            // 
+            // panel_TTGiuong
+            // 
+            this.panel_TTGiuong.Controls.Add(this.panel1);
+            this.panel_TTGiuong.Controls.Add(this.panel5);
+            this.panel_TTGiuong.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel_TTGiuong.Location = new System.Drawing.Point(958, 75);
+            this.panel_TTGiuong.Name = "panel_TTGiuong";
+            this.panel_TTGiuong.Size = new System.Drawing.Size(261, 526);
+            this.panel_TTGiuong.TabIndex = 105;
+            // 
+            // cbb_TenPhong
+            // 
+            this.cbb_TenPhong.FormattingEnabled = true;
+            this.cbb_TenPhong.Location = new System.Drawing.Point(114, 20);
+            this.cbb_TenPhong.Name = "cbb_TenPhong";
+            this.cbb_TenPhong.Size = new System.Drawing.Size(121, 21);
+            this.cbb_TenPhong.TabIndex = 85;
+            this.cbb_TenPhong.SelectedIndexChanged += new System.EventHandler(this.cbb_TenPhong_SelectedIndexChanged);
+            // 
             // Statistics_of_hospital_beds
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1219, 601);
-            this.Controls.Add(this.button11);
-            this.Controls.Add(this.button13);
-            this.Controls.Add(this.button15);
-            this.Controls.Add(this.button12);
-            this.Controls.Add(this.button10);
-            this.Controls.Add(this.button7);
-            this.Controls.Add(this.button8);
-            this.Controls.Add(this.button9);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.panel5);
-            this.Controls.Add(this.button14);
+            this.Controls.Add(this.panel_TTGiuong);
+            this.Controls.Add(this.panel_Gương);
             this.Controls.Add(this.panel2);
             this.Name = "Statistics_of_hospital_beds";
             this.Text = "Statistics_of_hospital_beds";
@@ -566,24 +316,14 @@ namespace Object_detect
             this.panel_LG_IN.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.panel_TTGiuong.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.Button button12;
-        private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel4;
@@ -597,14 +337,12 @@ namespace Object_detect
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Panel panel_LG_IN;
-        private System.Windows.Forms.Button button14;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.Button button13;
-        private System.Windows.Forms.Button button15;
         private System.Windows.Forms.Label lb_GU;
         private System.Windows.Forms.Label lb_GT;
         private System.Windows.Forms.Label lb_TongG;
-        private System.Windows.Forms.Label lb_TenPhong;
+        private System.Windows.Forms.Panel panel_Gương;
+        private System.Windows.Forms.Panel panel_TTGiuong;
+        private System.Windows.Forms.ComboBox cbb_TenPhong;
     }
 }

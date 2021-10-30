@@ -1,6 +1,7 @@
 ﻿using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Reflection;
 using System.Text;
@@ -96,6 +97,58 @@ namespace Object_detect
             
         }
         //-------------------------------------END: Hiển thị thông tin khoa------------------------------------------------------------
+
+        //-------------------------------------BEGIN: Hiển thị thông tin Giương----------------------------------------------------------
+        public static void HienThiTTGiuong(Button G, int i)
+        {
+            string SoGiuong = "SG000";
+            if(i < 10)
+            {
+                SoGiuong = "SG000";
+            }
+            if(i>=10 && i<100)
+            {
+                SoGiuong = "SG00";
+            }
+            string query = "SELECT * FROM giuong WHERE SoGiuong = '"+SoGiuong+""+i+"'";
+            MySqlConnection conn = GetDBConnection();
+            MySqlCommand cmd = new MySqlCommand(query, conn);
+            MySqlDataReader DTRead = cmd.ExecuteReader();
+            if (DTRead.HasRows)
+            {
+                int tt = 0;
+                DTRead.Read();
+                G.Text = DTRead[0].ToString();
+                G.Name = DTRead[0].ToString();
+                tt = int.Parse(DTRead[3].ToString());
+                if(tt == 1)
+                {
+                    G.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+                }
+            }
+
+        }
+
+        //-------------------------------------END: Hiển thị thông tin Giương------------------------------------------------------------
+
+        //-------------------------------------Begin: Hiển thị CBB--------------------------------------------
+        public static void HienThiCBB(string query, string id, string ten, ComboBox cbb)
+        {
+            string sql = query;
+            MySqlConnection conn = GetDBConnection();
+            MySqlCommand cmd = new MySqlCommand(sql, conn);
+            cmd.CommandType = System.Data.CommandType.Text;
+            DataTable dt = new DataTable();
+            MySqlDataAdapter DTA = new MySqlDataAdapter(cmd);
+            DTA.Fill(dt);
+            if (DTA != null)
+            {
+                cbb.ValueMember = id;
+                cbb.DisplayMember = ten;
+                cbb.DataSource = dt;
+            }
+        }
+        //-------------------------------------END: Hiển thị CBB--------------------------------------------
 
     }
 }
