@@ -60,6 +60,10 @@ namespace Object_detect
             this.button11 = new System.Windows.Forms.Button();
             this.button13 = new System.Windows.Forms.Button();
             this.button15 = new System.Windows.Forms.Button();
+            this.lb_TenPhong = new System.Windows.Forms.Label();
+            this.lb_TongG = new System.Windows.Forms.Label();
+            this.lb_GT = new System.Windows.Forms.Label();
+            this.lb_GU = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel_LG_IN.SuspendLayout();
@@ -164,6 +168,10 @@ namespace Object_detect
             // 
             this.panel5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel5.Controls.Add(this.lb_GU);
+            this.panel5.Controls.Add(this.lb_GT);
+            this.panel5.Controls.Add(this.lb_TongG);
+            this.panel5.Controls.Add(this.lb_TenPhong);
             this.panel5.Controls.Add(this.panel4);
             this.panel5.Controls.Add(this.panel3);
             this.panel5.Controls.Add(this.label8);
@@ -479,6 +487,50 @@ namespace Object_detect
             this.button15.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
             this.button15.UseVisualStyleBackColor = false;
             // 
+            // lb_TenPhong
+            // 
+            this.lb_TenPhong.AutoSize = true;
+            this.lb_TenPhong.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lb_TenPhong.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.lb_TenPhong.Location = new System.Drawing.Point(110, 18);
+            this.lb_TenPhong.Name = "lb_TenPhong";
+            this.lb_TenPhong.Size = new System.Drawing.Size(100, 19);
+            this.lb_TenPhong.TabIndex = 81;
+            this.lb_TenPhong.Text = "Room name:";
+            // 
+            // lb_TongG
+            // 
+            this.lb_TongG.AutoSize = true;
+            this.lb_TongG.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lb_TongG.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.lb_TongG.Location = new System.Drawing.Point(62, 59);
+            this.lb_TongG.Name = "lb_TongG";
+            this.lb_TongG.Size = new System.Drawing.Size(100, 19);
+            this.lb_TongG.TabIndex = 82;
+            this.lb_TongG.Text = "Room name:";
+            // 
+            // lb_GT
+            // 
+            this.lb_GT.AutoSize = true;
+            this.lb_GT.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lb_GT.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.lb_GT.Location = new System.Drawing.Point(110, 98);
+            this.lb_GT.Name = "lb_GT";
+            this.lb_GT.Size = new System.Drawing.Size(100, 19);
+            this.lb_GT.TabIndex = 83;
+            this.lb_GT.Text = "Room name:";
+            // 
+            // lb_GU
+            // 
+            this.lb_GU.AutoSize = true;
+            this.lb_GU.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lb_GU.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.lb_GU.Location = new System.Drawing.Point(110, 133);
+            this.lb_GU.Name = "lb_GU";
+            this.lb_GU.Size = new System.Drawing.Size(100, 19);
+            this.lb_GU.TabIndex = 84;
+            this.lb_GU.Text = "Room name:";
+            // 
             // Statistics_of_hospital_beds
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -505,6 +557,7 @@ namespace Object_detect
             this.Controls.Add(this.panel2);
             this.Name = "Statistics_of_hospital_beds";
             this.Text = "Statistics_of_hospital_beds";
+            this.Load += new System.EventHandler(this.Statistics_of_hospital_beds_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel5.ResumeLayout(false);
@@ -549,5 +602,9 @@ namespace Object_detect
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.Button button13;
         private System.Windows.Forms.Button button15;
+        private System.Windows.Forms.Label lb_GU;
+        private System.Windows.Forms.Label lb_GT;
+        private System.Windows.Forms.Label lb_TongG;
+        private System.Windows.Forms.Label lb_TenPhong;
     }
 }

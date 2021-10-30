@@ -52,6 +52,33 @@ namespace Object_detect
             s = (int)cmd.ExecuteScalar();
             return s;
         }
+        public static int TongGiuong()
+        {
+            int s;
+            string query = " SELECT TongGiuong('MP0001')";
+            MySqlConnection conn = GetDBConnection();
+            MySqlCommand cmd = new MySqlCommand(query, conn);
+            s = (int)cmd.ExecuteScalar();
+            return s;
+        }
+        public static int TongGiuongUse()
+        {
+            int s;
+            string query = " SELECT TongGiuongUse('MP0001')";
+            MySqlConnection conn = GetDBConnection();
+            MySqlCommand cmd = new MySqlCommand(query, conn);
+            s = (int)cmd.ExecuteScalar();
+            return s;
+        }
+        public static int TongGiuongTrong()
+        {
+            int s;
+            string query = " SELECT TongGiuongTrong('MP0001')";
+            MySqlConnection conn = GetDBConnection();
+            MySqlCommand cmd = new MySqlCommand(query, conn);
+            s = (int)cmd.ExecuteScalar();
+            return s;
+        }
 
         //-------------------------------------BEGIN: Hiển thị thông tin khoa----------------------------------------------------------
         public static void HienThiTenKhoa(Button khoa, int i)
