@@ -39,6 +39,10 @@ namespace Object_detect
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.lb_GUse = new System.Windows.Forms.Label();
+            this.lb_GTrong = new System.Windows.Forms.Label();
+            this.lb_TongG = new System.Windows.Forms.Label();
+            this.lb_Phong = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -47,10 +51,6 @@ namespace Object_detect
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel_Giuong = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.lb_Phong = new System.Windows.Forms.Label();
-            this.lb_TongG = new System.Windows.Forms.Label();
-            this.lb_GTrong = new System.Windows.Forms.Label();
-            this.lb_GUse = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel_LG_IN.SuspendLayout();
@@ -171,6 +171,50 @@ namespace Object_detect
             this.panel5.Size = new System.Drawing.Size(261, 182);
             this.panel5.TabIndex = 102;
             // 
+            // lb_GUse
+            // 
+            this.lb_GUse.AutoSize = true;
+            this.lb_GUse.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lb_GUse.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.lb_GUse.Location = new System.Drawing.Point(97, 132);
+            this.lb_GUse.Name = "lb_GUse";
+            this.lb_GUse.Size = new System.Drawing.Size(100, 19);
+            this.lb_GUse.TabIndex = 84;
+            this.lb_GUse.Text = "Room name:";
+            // 
+            // lb_GTrong
+            // 
+            this.lb_GTrong.AutoSize = true;
+            this.lb_GTrong.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lb_GTrong.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.lb_GTrong.Location = new System.Drawing.Point(97, 97);
+            this.lb_GTrong.Name = "lb_GTrong";
+            this.lb_GTrong.Size = new System.Drawing.Size(100, 19);
+            this.lb_GTrong.TabIndex = 83;
+            this.lb_GTrong.Text = "Room name:";
+            // 
+            // lb_TongG
+            // 
+            this.lb_TongG.AutoSize = true;
+            this.lb_TongG.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lb_TongG.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.lb_TongG.Location = new System.Drawing.Point(62, 59);
+            this.lb_TongG.Name = "lb_TongG";
+            this.lb_TongG.Size = new System.Drawing.Size(100, 19);
+            this.lb_TongG.TabIndex = 82;
+            this.lb_TongG.Text = "Room name:";
+            // 
+            // lb_Phong
+            // 
+            this.lb_Phong.AutoSize = true;
+            this.lb_Phong.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lb_Phong.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.lb_Phong.Location = new System.Drawing.Point(110, 18);
+            this.lb_Phong.Name = "lb_Phong";
+            this.lb_Phong.Size = new System.Drawing.Size(100, 19);
+            this.lb_Phong.TabIndex = 81;
+            this.lb_Phong.Text = "Room name:";
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -254,50 +298,6 @@ namespace Object_detect
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(273, 526);
             this.panel6.TabIndex = 105;
-            // 
-            // lb_Phong
-            // 
-            this.lb_Phong.AutoSize = true;
-            this.lb_Phong.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.lb_Phong.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.lb_Phong.Location = new System.Drawing.Point(110, 18);
-            this.lb_Phong.Name = "lb_Phong";
-            this.lb_Phong.Size = new System.Drawing.Size(100, 19);
-            this.lb_Phong.TabIndex = 81;
-            this.lb_Phong.Text = "Room name:";
-            // 
-            // lb_TongG
-            // 
-            this.lb_TongG.AutoSize = true;
-            this.lb_TongG.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.lb_TongG.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.lb_TongG.Location = new System.Drawing.Point(62, 59);
-            this.lb_TongG.Name = "lb_TongG";
-            this.lb_TongG.Size = new System.Drawing.Size(100, 19);
-            this.lb_TongG.TabIndex = 82;
-            this.lb_TongG.Text = "Room name:";
-            // 
-            // lb_GTrong
-            // 
-            this.lb_GTrong.AutoSize = true;
-            this.lb_GTrong.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.lb_GTrong.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.lb_GTrong.Location = new System.Drawing.Point(97, 97);
-            this.lb_GTrong.Name = "lb_GTrong";
-            this.lb_GTrong.Size = new System.Drawing.Size(100, 19);
-            this.lb_GTrong.TabIndex = 83;
-            this.lb_GTrong.Text = "Room name:";
-            // 
-            // lb_GUse
-            // 
-            this.lb_GUse.AutoSize = true;
-            this.lb_GUse.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.lb_GUse.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.lb_GUse.Location = new System.Drawing.Point(97, 132);
-            this.lb_GUse.Name = "lb_GUse";
-            this.lb_GUse.Size = new System.Drawing.Size(100, 19);
-            this.lb_GUse.TabIndex = 84;
-            this.lb_GUse.Text = "Room name:";
             // 
             // Statistics_of_hospital_beds
             // 
