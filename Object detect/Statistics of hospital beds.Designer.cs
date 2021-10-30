@@ -313,9 +313,8 @@ namespace Object_detect
             this.lb_Name.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.lb_Name.Location = new System.Drawing.Point(62, 51);
             this.lb_Name.Name = "lb_Name";
-            this.lb_Name.Size = new System.Drawing.Size(56, 19);
+            this.lb_Name.Size = new System.Drawing.Size(0, 19);
             this.lb_Name.TabIndex = 79;
-            this.lb_Name.Text = "Name:";
             // 
             // lb_Number
             // 
@@ -324,9 +323,8 @@ namespace Object_detect
             this.lb_Number.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.lb_Number.Location = new System.Drawing.Point(115, 86);
             this.lb_Number.Name = "lb_Number";
-            this.lb_Number.Size = new System.Drawing.Size(56, 19);
+            this.lb_Number.Size = new System.Drawing.Size(0, 19);
             this.lb_Number.TabIndex = 80;
-            this.lb_Number.Text = "Name:";
             // 
             // btn_XemCTBN
             // 
